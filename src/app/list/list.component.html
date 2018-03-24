@@ -1,0 +1,11 @@
+
+<div *ngFor="let l of toDoList" >
+  <div class="row card card-group " style="width: 100%; border-radius: 10px">
+    <div class="col-12">
+    <app-list-item [listItem]="l" (statusChanged)=itemDeleted($event) ></app-list-item>
+    </div>
+  </div>
+
+
+  <br>
+</div>

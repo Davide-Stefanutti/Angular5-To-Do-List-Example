@@ -1,0 +1,32 @@
+
+
+<div  class="row"  ng-class="{green:!listItem.isCompleted}" >
+    <div class="col-9">
+
+        <br>
+
+        <h3 class="text-primary">{{listItem.title}}</h3>
+        <br>
+        <p>{{listItem.description}} </p>
+        <br>
+        <h6>{{listItem.creationDate}}</h6>
+
+
+        <input type="checkbox" [checked]="listItem.isCompleted" (change)="editStatus()">
+          Completed:  {{listItem.isCompleted}}
+
+        <br>
+        <button type="button"  class="btn-danger" (click)="deleteItem()"> Delete </button>
+
+
+        <br>
+
+
+    </div>
+
+    <div class="col-3">
+      <button type="button" [ngClass]="{false:'btn-warning', true:'btn-success' }[listItem.isCompleted]" class=" btn-block btn-changeStatus" (click)="editStatus()" > {{btnStatus}} </button>
+
+    </div>
+
+</div>

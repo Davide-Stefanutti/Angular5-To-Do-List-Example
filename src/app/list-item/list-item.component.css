@@ -1,0 +1,15 @@
+
+
+.btn-text-done{
+  content: "DONE";
+}
+
+.btn-text-todo{
+  content: "TO DO";
+}
+
+.btn-changeStatus{
+  height: 100%;
+  cursor: pointer;
+  border-radius: 10px;
+}

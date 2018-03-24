@@ -1,0 +1,20 @@
+
+<div class="row">
+  <div class="col-4 offset-4">
+    <form #toDoForm="ngForm" (ngSubmit)="send(toDoForm)">
+    <div class="form-group row">
+      <label class="col-sm-3 col-form-label" >Title</label>
+      <div class="col-sm-9">
+        <input type="text" class="form-control" name="title" required ngModel>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-sm-3 col-form-label" >Description</label>
+      <div class="col-sm-9">
+        <textarea class="form-control" rows="4" placeholder="..." name="description" ngModel> </textarea>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary float-right">Save</button>
+    </form>
+  </div>
+</div>
